@@ -1,0 +1,119 @@
+  @import "shared/lib/styles/variables.scss";
+.overlay {
+  position: fixed;
+  z-index: $ZIndexOverlay;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  visibility: hidden;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: $transitionDefault;
+  opacity: 0;
+
+  cursor: pointer;
+}
+
+.content {
+  cursor: default;
+  width: 100%;
+
+  background-color: #FFFFFF;
+
+  padding: 50px;
+
+  position: absolute;
+  bottom: -100%;
+
+  box-shadow: $boxShadowDefault;
+  transition: $transitionDefault;
+
+  height: 90%;
+
+  border-radius: 10px 10px 0 0;
+}
+
+.isOpenOverlay {
+  visibility: visible;
+  opacity: 1;
+}
+
+.isOpenContent {
+  bottom: 0;
+}
+
+.closeBtn {
+  display: block;
+
+  position: absolute;
+
+  top: 30px;
+  right: 40px;
+
+  cursor: pointer;
+}
+
+.innerWrapper {
+  position: relative;
+
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+
+  gap: 50px;
+}
+
+.leftWrapper {
+  width: 60%
+}
+
+.header {
+
+}
+
+.topLineHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainTitle {
+
+}
+
+.userActions {
+  display: flex;
+  align-items: center;
+
+  gap: 8px
+}
+
+.entityInfo {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+}
+
+.logo {
+  position: relative !important;
+  width: 70px !important;
+
+  border-radius: 10px;
+}
+
+.wrapperAdditionalInformation {
+  display: flex;
+  flex-direction: column;
+
+  gap: 9px;
+}
+
+.rightWrapper {
+  width: 35%
+}
+
+
+

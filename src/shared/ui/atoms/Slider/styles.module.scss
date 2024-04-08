@@ -1,0 +1,38 @@
+.sliderRoot {
+  position: relative;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  touch-action: none;
+  width: 350px;
+  height: 22px;
+}
+
+.sliderTrack {
+  background-color: #3B3B3C;
+  position: relative;
+  flex-grow: 1;
+  border-radius: 9999px;
+  height: 5px;
+}
+
+.sliderRange {
+  position: absolute;
+  background-color: #0B7BFF;
+  border-radius: 9999px;
+  height: 100%;
+
+}
+.sliderThumb {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-color: #0B7BFF;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.sliderThumb:focus {
+  outline: none;
+}
+

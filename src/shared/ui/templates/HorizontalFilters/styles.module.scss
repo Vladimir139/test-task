@@ -1,0 +1,34 @@
+.horizontalFilter {
+  padding: 20px 0;
+
+  border-bottom: 1px solid #898B92;
+
+  background-color: #FFFFFF;
+}
+
+.innerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftWrapper {
+  display: flex;
+  align-items: center;
+
+  gap: 27px
+}
+
+.rightWrapper {
+
+}
+
+.verticalLine {
+  display: block;
+
+  border-radius: 99px;
+
+  width: 4px;
+  height: 48px;
+  background-color: #000000;
+}

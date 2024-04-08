@@ -1,0 +1,73 @@
+.button {
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 6px;
+
+  cursor: pointer;
+}
+
+// Theme
+
+.themeBlue {
+  background-color: #0979FF;
+  color: #FFFFFF;
+}
+
+.themeDark {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.themeOutline {
+  border: 2px solid #B6BFC6;
+  background-color: inherit;
+  color: #000000;
+}
+
+// Radius
+
+.radiusNormal {
+  border-radius: 15px;
+}
+
+.radiusMedium {
+  border-radius: 20px;
+}
+
+// TextSize
+
+.textSizeMedium {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.textSizeDefault {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+// Size
+
+.sizeNormal {
+  padding: 10px
+}
+
+.sizeMedium {
+ padding: 15px
+}
+
+// Boolean
+
+.disabledTrue {}
+
+.stretch {
+  width: 100%
+}
+
+

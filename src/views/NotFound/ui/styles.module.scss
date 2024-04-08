@@ -1,0 +1,42 @@
+.image {
+  position: relative !important;
+
+  display: flex;
+
+  margin: 0 auto;
+
+  width: 100%;
+  max-width: 1000px;
+}
+
+.textError {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100%;
+
+  text-align: center;
+
+  color: #3B3B3C;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #2E9BFF;
+  color: #FFFFFF;
+
+  width: 100%;
+  max-width: 262px;
+
+  padding: 22px;
+
+  margin: 34px auto 150px;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+
+  border-radius: 7px;
+}

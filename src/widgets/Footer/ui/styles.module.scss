@@ -1,0 +1,46 @@
+.footer {
+  background-color: #050707;
+  color: #FFFFFF;
+
+  padding: 25px;
+}
+.blockList {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.block {
+
+}
+
+.title {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 500;
+
+  margin-bottom: 10px;
+}
+
+.text {
+  padding: 1px 0;
+}
+
+.socialNetworkList {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  gap: 15px
+}
+
+.wrapperButton {
+  width: 184px;
+}
+
+.centered {
+  text-align: center;
+  color: #898B92
+}

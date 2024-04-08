@@ -1,0 +1,60 @@
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  gap: 10px;
+}
+
+.logo {
+  width: 44px !important;
+  height: 42px !important;
+
+  border-radius: 999px;
+
+  position: relative !important;
+}
+
+.bigImage {
+  width: 54px;
+  height: 49px;
+}
+
+.squareLogo {
+  border-radius: 10px;
+}
+
+.info {
+  padding: 2px 0 4px;
+
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 3px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.isBigMarginTitle {
+  margin-bottom: 10px;
+}
+
+.subTitle {
+  color: #848F96;
+
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.default {
+  font-size: 16px;
+}
+
+.defaultSmall {
+  font-size: 15px;
+}
