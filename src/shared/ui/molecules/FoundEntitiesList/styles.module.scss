@@ -1,0 +1,52 @@
+.wrapper {
+  position: absolute;
+
+  top: 100%;
+  left: 0;
+
+  width: 245px;
+
+  opacity: 0;
+  overflow: hidden;
+
+  transition: 0.2s ease-in-out;
+
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  border: 1px solid #D9D9D9;
+}
+
+.isVisibleBlock {
+  opacity: 1;
+  overflow: visible;
+
+  border-radius: 0 0 4px 4px;
+}
+
+.input {
+  padding: 6px;
+  width: 100%;
+  outline: none;
+
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.foundedEntityList {
+
+}
+
+.foundEntity {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+
+  padding: 8px 6px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease-in-out;
+}
+
+.foundEntity:hover {
+  background-color: #F4F4F6;
+}

@@ -1,6 +1,7 @@
 export * from "./Arrows";
 export * from "./CareerIcons";
 export * from "./CloseIcon";
+export * from "./DeleteIcon";
 export * from "./DoneIcon";
 export * from "./IconPlus";
 export * from "./MagnifierIcon";

@@ -29,9 +29,31 @@
   width: 100%;
 }
 
-
-
 .wrapperInput {
   width: 100%;
   max-width: 420px;
+
+  position: relative;
+}
+
+.wrapperSearchFoundBlock {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  width: 600px;
+
+  overflow: hidden;
+  opacity: 0;
+  display: none;
+
+  transition: 0.2s ease-in-out;
+
+  z-index: $ZIndexSearchEntityBlock;
+}
+
+.visibleSearchFoundBlock {
+  overflow: visible;
+  opacity: 1;
+  display: block;
 }

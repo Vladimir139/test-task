@@ -17,6 +17,7 @@ export const Input: FC<InputProps> = ({
   stretch,
   secondIcon,
   size,
+  borderBottomNone,
   ...props
 }) => {
   if (title) {
@@ -29,6 +30,7 @@ export const Input: FC<InputProps> = ({
       <label
         className={cx(styles.label, {
           [styles.sizeMedium]: size === "medium",
+          [styles.borderBottomNone]: borderBottomNone,
         })}
       >
         {firstIcon || null}
@@ -52,6 +54,7 @@ export const Input: FC<InputProps> = ({
     <label
       className={cx(styles.label, {
         [styles.sizeMedium]: size === "medium",
+        [styles.borderBottomNone]: borderBottomNone,
       })}
     >
       {firstIcon && <span style={{ display: "flex" }}>{firstIcon}</span>}

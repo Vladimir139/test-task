@@ -22,4 +22,7 @@ export interface InputProps {
   isRequired?: boolean;
   stretch?: boolean;
   size?: "medium";
+  borderBottomNone?: boolean;
+  onFocus?: () => void;
+  onBlur?: () => void;
 }

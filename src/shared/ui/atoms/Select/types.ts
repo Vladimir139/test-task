@@ -5,4 +5,6 @@ export interface SelectProps {
   icon?: ReactNode;
   value: string;
   isOpen: boolean;
+  noBorderBottom?: boolean;
+  onClick?: () => void;
 }

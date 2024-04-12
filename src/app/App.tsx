@@ -35,7 +35,7 @@ export const App: FC<AppProps> = ({ children }) => {
 
   return (
     <>
-      <Header />
+      {router.pathname !== "/404" && <Header />}
       {isShowFilters && <HorizontalFilters />}
       {isEntityInfoPage ? (
         <div className={styles.wrapper}>
@@ -61,7 +61,7 @@ export const App: FC<AppProps> = ({ children }) => {
           <main>{children}</main>
         </Container>
       )}
-      <Footer />
+      {router.pathname !== "/404" && <Footer />}
       <Modal handleClose={() => setIsOpenedModal(false)} isOpened={isOpenedModal}>
         <p className={styles.phraseModal}>
           Пройдите тестирование, чтобы получить профориентационные рекомендации

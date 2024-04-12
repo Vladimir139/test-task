@@ -19,6 +19,11 @@
   height: 48px;
 }
 
+.borderBottomNone {
+  border-radius: 10px 10px 0 0;
+  border-bottom: none;
+}
+
 .sizeMedium {
   height: 58px;
 }

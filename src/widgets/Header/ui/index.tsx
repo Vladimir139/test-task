@@ -5,13 +5,13 @@ import { FC, useState } from "react";
 
 import { MagnifierIcon } from "@/shared/lib/icons";
 import { Container, Input } from "@/shared/ui/atoms";
-import { Navigation } from "@/widgets/Header/lib/ui";
-import { CareerNavigation } from "@/widgets/Header/lib/ui/CareerNavigation";
+import { CareerNavigation, Navigation, SearchFoundBlock } from "@/widgets/Header/lib/ui";
 
 import styles from "./styles.module.scss";
 
 export const Header: FC = () => {
   const [isShowCareerNav, setIsShowCareerNav] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
   const router = useRouter();
 
   const isEntityInfoPage =
@@ -39,9 +39,19 @@ export const Header: FC = () => {
         <div className={styles.headerInnerWrapper}>
           <div className={styles.wrapperInput}>
             <Input
+              onFocus={() => setIsVisible(true)}
+              onBlur={() => setIsVisible(false)}
+              borderBottomNone={isVisible}
               placeholder="Введите название вакансии, компании..."
               firstIcon={<MagnifierIcon />}
             />
+            <div
+              className={cx(styles.wrapperSearchFoundBlock, {
+                [styles.visibleSearchFoundBlock]: isVisible,
+              })}
+            >
+              <SearchFoundBlock />
+            </div>
           </div>
           <Navigation
             isActiveCareerLink={isShowCareerNav}
