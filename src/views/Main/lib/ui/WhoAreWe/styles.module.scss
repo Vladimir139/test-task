@@ -1,0 +1,55 @@
+.topWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 27px;
+  font-weight: 600;
+  line-height: 29px;
+
+  margin-bottom: 30px;
+
+  text-align: center;
+}
+
+.textWrapper {
+  width: 100%;
+  max-width: 600px;
+}
+
+.text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+
+  margin: 20px 0;
+}
+
+.text span {
+  color: #0979FF;
+}
+
+.firstPhoto {
+  position: relative !important;
+  max-width: 600px;
+}
+
+.bottomWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.secondPhoto {
+  position: relative !important;
+
+  max-width: 601px;
+}

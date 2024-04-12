@@ -26,7 +26,7 @@ export const CardsList: FC<CardsListProps> = ({ entities }) => {
       { text: entity.type !== "profession" ? entity.city : "" },
     ],
     tags: entity.tags,
-    link: `/${entity.type}/${entity.id}`,
+    link: `/${entity.type}/${entity.transliterationName}`,
     additionalText: [] as IAdditionalText[],
     dateRecord: entity.type !== "profession" ? entity?.createdAt : new Date(),
     salary: {
@@ -70,8 +70,6 @@ export const CardsList: FC<CardsListProps> = ({ entities }) => {
         | IInternshipsAndPractices,
     ) => entity.id === idCardPreview,
   );
-
-  // Переписать надо под все карточки, а не только под вакансии
 
   return (
     <>

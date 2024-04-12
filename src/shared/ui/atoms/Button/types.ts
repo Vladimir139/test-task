@@ -6,9 +6,9 @@ export interface ButtonProps {
   isLoading?: boolean;
   isStretch?: boolean;
   type?: "submit" | "button" | "reset";
-  size?: "medium" | "normal";
+  size?: "medium" | "normal" | "average";
   textSize?: "medium" | "default";
-  radius?: "normal" | "medium";
-  theme?: "blue" | "dark" | "outline";
+  radius?: "normal" | "medium" | "small" | "little";
+  theme?: "blue" | "dark" | "outline" | "outlineBlue" | "darkBlue" | "outlineDarkBlue";
   onClick?: () => void;
 }

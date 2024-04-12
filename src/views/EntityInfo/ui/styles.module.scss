@@ -1,0 +1,28 @@
+.innerWrapper {
+  display: flex;
+  align-items: start;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  width: 100%;
+  max-width: 1000px;
+
+  margin: 46px auto 0;
+}
+
+.leftWrapper {
+  width: 57%;
+}
+
+.rightWrapper {
+  width: 38%;
+}
+
+.anotherOffers {
+  display: flex;
+  flex-direction: column;
+
+  gap: 35px;
+}

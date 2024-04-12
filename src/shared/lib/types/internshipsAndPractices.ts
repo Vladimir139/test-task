@@ -1,6 +1,6 @@
+import { IContact } from "@/shared/lib/types";
 import { ITag } from "@/shared/lib/types/info";
 
-import { Contact } from "./contact";
 import { IEducationalEstablishments } from "./educationalEstablishments";
 import { IEnterprises } from "./enterprises";
 import { IProfession } from "./profession";
@@ -27,7 +27,7 @@ export interface IInternshipsAndPractices {
   knowledge: string[]; // можно вставить редактор описние или массив строк
   tags: ITag[];
   createdAt: Date;
-  contacts: Contact[];
+  contacts: IContact[];
   city: string;
   // ----
   similarInternshipsAndPractices: IInternshipsAndPractices[];

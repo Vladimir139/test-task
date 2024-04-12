@@ -1,0 +1,43 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftWrapper {
+  width: 100%;
+  max-width: 700px;
+}
+
+.sloganTitle {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 47px;
+
+  color: #030F0F;
+}
+
+.sloganTitle span {
+  color: #0979FF;
+}
+
+.subSlogan {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+
+  color: #616E7B;
+
+  margin: 45px 0 20px;
+}
+
+.wrapperSearchBtn {
+  width: 100px;
+}
+
+.previewImage {
+  position: relative !important;
+
+  max-width: 578px;
+  max-height: 398px;
+}

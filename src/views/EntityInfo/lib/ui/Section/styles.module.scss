@@ -1,0 +1,28 @@
+.section {
+  margin-bottom: 34px;
+}
+
+.sectionTopLine {
+  margin-bottom: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.sectionLinkMore {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+
+  color: #0065FF;
+}
+

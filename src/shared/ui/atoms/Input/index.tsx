@@ -16,6 +16,7 @@ export const Input: FC<InputProps> = ({
   isRequired,
   stretch,
   secondIcon,
+  size,
   ...props
 }) => {
   if (title) {
@@ -25,8 +26,12 @@ export const Input: FC<InputProps> = ({
           {title} {isRequired && <span style={{ color: "red" }}>*</span>}
         </>
       )}
-      <label className={styles.label}>
-        {firstIcon && firstIcon}
+      <label
+        className={cx(styles.label, {
+          [styles.sizeMedium]: size === "medium",
+        })}
+      >
+        {firstIcon || null}
         <input
           {...props}
           type={type}
@@ -44,8 +49,12 @@ export const Input: FC<InputProps> = ({
   }
 
   return (
-    <label className={styles.label}>
-      <span style={{ display: "flex" }}>{firstIcon && firstIcon}</span>
+    <label
+      className={cx(styles.label, {
+        [styles.sizeMedium]: size === "medium",
+      })}
+    >
+      {firstIcon && <span style={{ display: "flex" }}>{firstIcon}</span>}
       <input
         {...props}
         type={type}

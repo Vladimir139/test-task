@@ -1,6 +1,6 @@
+import { IContact } from "@/shared/lib/types";
 import { ITag } from "@/shared/lib/types/info";
 
-import { Contact } from "./contact";
 import { IEducationalEstablishments } from "./educationalEstablishments";
 import { IInternshipsAndPractices } from "./internshipsAndPractices";
 import { IProfession } from "./profession";
@@ -25,7 +25,7 @@ export interface IEnterprises {
   tags: ITag[];
   createdAt: Date;
   DateOfBirth: Date;
-  contacts: Contact[];
+  contacts: IContact[];
   city: string;
   // ----
   similarEnterprises: IEnterprises[];

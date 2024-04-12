@@ -17,6 +17,12 @@
   color: #FFFFFF;
 }
 
+.themeOutlineBlue {
+  background-color: inherit;
+  color: #0979FF;
+  border: 2px solid #0979FF;
+}
+
 .themeDark {
   background-color: #000000;
   color: #FFFFFF;
@@ -28,6 +34,17 @@
   color: #000000;
 }
 
+.themeDarkBlue {
+  background-color: #04336C;
+  color: #FFFFFF;
+}
+
+.themeOutlineDarkBlue {
+  border: 2px solid #404A78;
+  background-color: inherit;
+  color: #404A78;
+}
+
 // Radius
 
 .radiusNormal {
@@ -36,6 +53,14 @@
 
 .radiusMedium {
   border-radius: 20px;
+}
+
+.radiusSmall {
+  border-radius: 12px;
+}
+
+.radiusLittle {
+  border-radius: 10px;
 }
 
 // TextSize
@@ -60,6 +85,10 @@
 
 .sizeMedium {
  padding: 15px
+}
+
+.sizeAverage {
+  padding: 12px
 }
 
 // Boolean

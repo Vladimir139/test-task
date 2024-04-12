@@ -1,14 +1,19 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
-import { FC } from "react";
+import { FC, useState } from "react";
 
-import { Container } from "@/shared/ui/atoms";
+import { Button, Container, Modal } from "@/shared/ui/atoms";
 import { HorizontalFilters } from "@/shared/ui/templates";
 import { Footer, Header } from "@/widgets";
 
+import styles from "./styles.module.scss";
 import { AppProps } from "./types";
 
+// @ts-ignore
 export const App: FC<AppProps> = ({ children }) => {
   const router = useRouter();
+
+  const [isOpenedModal, setIsOpenedModal] = useState(false);
 
   const isShowFilters =
     router.pathname === "/vacancy" ||
@@ -17,14 +22,57 @@ export const App: FC<AppProps> = ({ children }) => {
     router.pathname === "/educational-establishments" ||
     router.pathname === "/internships-and-practices";
 
+  const isEntityInfoPage =
+    router.pathname.includes("/vacancy/") ||
+    router.pathname.includes("/professions/") ||
+    router.pathname.includes("/enterprises/") ||
+    router.pathname.includes("/educational-establishments/") ||
+    router.pathname.includes("/internships-and-practices/");
+
+  if (router.pathname === "/test") {
+    return children;
+  }
+
   return (
     <>
       <Header />
       {isShowFilters && <HorizontalFilters />}
-      <Container>
-        <main>{children}</main>
-      </Container>
+      {isEntityInfoPage ? (
+        <div className={styles.wrapper}>
+          {/* <Image className={styles.imageEntity} src="/" alt="Image preview" fill /> */}
+          <div
+            style={{
+              height: 280,
+              maxWidth: 1400,
+              margin: "0 auto",
+              width: "100%",
+              backgroundColor: "#000000",
+              position: "absolute",
+              zIndex: -1,
+              borderRadius: "0px 0px 10px 10px",
+            }}
+          />
+          <Container>
+            <main>{children}</main>
+          </Container>
+        </div>
+      ) : (
+        <Container>
+          <main>{children}</main>
+        </Container>
+      )}
       <Footer />
+      <Modal handleClose={() => setIsOpenedModal(false)} isOpened={isOpenedModal}>
+        <p className={styles.phraseModal}>
+          Пройдите тестирование, чтобы получить профориентационные рекомендации
+        </p>
+        <Button theme="blue" size="medium" isStretch radius="little">
+          Пройти тестирование
+        </Button>
+        <Link href="/" className={styles.linkGoHome}>
+          Перейти на главную
+        </Link>
+      </Modal>
     </>
   );
 };

@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 
-import { ArticlesPage } from "@/views";
+import { NewsAndArticlesPage } from "@/views";
 
-const Articles: NextPage = () => <ArticlesPage />;
+const Articles: NextPage = () => <NewsAndArticlesPage titlePage="Статьи" type="articles" />;
 
 export default Articles;

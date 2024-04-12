@@ -14,12 +14,20 @@ export const Header: FC = () => {
   const [isShowCareerNav, setIsShowCareerNav] = useState(false);
   const router = useRouter();
 
+  const isEntityInfoPage =
+    router.pathname.includes("/vacancy/") ||
+    router.pathname.includes("/professions/") ||
+    router.pathname.includes("/enterprises/") ||
+    router.pathname.includes("/educational-establishments/") ||
+    router.pathname.includes("/internships-and-practices/");
+
   const isShowBorder =
     router.pathname === "/vacancy" ||
     router.pathname === "/professions" ||
     router.pathname === "/enterprises" ||
     router.pathname === "/educational-establishments" ||
-    router.pathname === "/internships-and-practices";
+    router.pathname === "/internships-and-practices" ||
+    isEntityInfoPage;
 
   return (
     <header

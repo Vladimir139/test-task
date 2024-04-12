@@ -1,0 +1,62 @@
+@import "@/shared/lib/styles/variables.scss";
+
+.overlay {
+  position: fixed;
+  z-index: $ZIndexOverlay;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  visibility: hidden;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: $transitionDefault;
+  opacity: 0;
+
+  cursor: pointer;
+}
+
+.isOpened {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal {
+  border-radius: 10px;
+
+  width: 377px;
+  height: min-content;
+
+  position: absolute;
+  inset: 0;
+
+  opacity: 0;
+  overflow: hidden;
+
+  background-color: #FFFFFF;
+
+  margin: auto;
+
+  padding: 30px;
+
+  transition: $transitionDefault;
+}
+
+.isActive {
+  opacity: 1;
+  overflow: visible;
+}
+
+.sizeBig {
+
+}
+
+.closeBtn {
+  cursor: pointer;
+
+  position: absolute;
+
+  top: 0;
+  right: -43px;
+}

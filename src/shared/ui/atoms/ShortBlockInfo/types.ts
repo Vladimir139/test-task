@@ -8,4 +8,5 @@ export interface ShortBlockInfoProps {
   textSizeTitle?: "defaultSmall" | "default";
   radiusLogo?: "square";
   isBig?: boolean;
+  isIconEnd?: boolean;
 }

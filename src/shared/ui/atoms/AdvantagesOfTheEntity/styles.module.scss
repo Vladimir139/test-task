@@ -1,0 +1,49 @@
+.advantagesList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+
+  gap: 17px;
+
+  background-color: #FFFFFF;
+
+  padding: 25px;
+  border-radius: 12px;
+
+  width: 100%;
+}
+
+.advantageItem {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+
+  color: #3B3B3C;
+}
+
+.advantageItem div {
+  height: 39px;
+  width: 100%;
+  max-width: 39px;
+
+  background-color: #DAEBFF;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.isMoreBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #D9D9D9 !important;
+  border-radius: 5px;
+}

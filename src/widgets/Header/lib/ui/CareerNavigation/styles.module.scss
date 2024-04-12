@@ -23,13 +23,17 @@
 }
 
 .isShow {
-  top: 100px;
+  top: 98px;
   visibility: visible;
   opacity: 1;
 
   background-color: #FFFFFF;
 
   box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+}
+
+.positionMoreTop {
+  top: 99px;
 }
 
 .innerWrapper {

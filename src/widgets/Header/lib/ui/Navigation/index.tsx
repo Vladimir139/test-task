@@ -26,16 +26,6 @@ export const Navigation: FC<{
             Главная
           </Link>
         </li>
-        <li>
-          <Link
-            href="/about-us"
-            className={cx(styles.navLink, {
-              [styles.isActiveNavLink]: router.pathname === "/about-us",
-            })}
-          >
-            О нас
-          </Link>
-        </li>
         {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-interactions */}
         <li
           className={cx(styles.navLink, {

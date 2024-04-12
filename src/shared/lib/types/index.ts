@@ -6,4 +6,5 @@ export * from "./info";
 export * from "./internshipsAndPractices";
 export * from "./profession";
 export * from "./sphere";
+export * from "./test";
 export * from "./vacancy";

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FC } from "react";
 
 import { TelegramIcon, ViberIcon, VkIcon, WhatsAppIcon } from "@/shared/lib/icons";
-import { Button, Container } from "@/shared/ui/atoms";
+import { Container } from "@/shared/ui/atoms";
 
 import styles from "./styles.module.scss";
 
@@ -58,9 +58,9 @@ export const Footer: FC = () => (
           <h3 className={styles.title}>Предприятиям и учебным заведениям</h3>
         </div>
         <div className={styles.wrapperButton}>
-          <Button size="medium" isStretch textSize="medium">
+          <Link href="/test" className={styles.linkTest}>
             Пройти тест
-          </Button>
+          </Link>
         </div>
       </div>
     </Container>

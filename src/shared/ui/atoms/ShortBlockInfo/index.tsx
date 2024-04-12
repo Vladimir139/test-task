@@ -13,18 +13,21 @@ export const ShortBlockInfo: FC<ShortBlockInfoProps> = ({
   textSizeTitle,
   radiusLogo,
   isBig,
+  isIconEnd,
 }) => (
   <div className={styles.wrapper}>
     {/* <Image src={card.icon} alt={`${card.title} logo`} fill className={styles.logo} /> */}
-    <Image
-      src={icon}
-      alt="logo"
-      fill
-      className={cx(styles.logo, {
-        [styles.squareLogo]: radiusLogo === "square",
-        [styles.bigImage]: isBig,
-      })}
-    />
+    {!isIconEnd && (
+      <Image
+        src={icon}
+        alt="logo"
+        fill
+        className={cx(styles.logo, {
+          [styles.squareLogo]: radiusLogo === "square",
+          [styles.bigImage]: isBig,
+        })}
+      />
+    )}
     <div className={styles.info}>
       <h3
         className={cx(styles.title, {
@@ -46,5 +49,16 @@ export const ShortBlockInfo: FC<ShortBlockInfoProps> = ({
         </p>
       )}
     </div>
+    {isIconEnd && (
+      <Image
+        src={icon}
+        alt="logo"
+        fill
+        className={cx(styles.logo, {
+          [styles.squareLogo]: radiusLogo === "square",
+          [styles.bigImage]: isBig,
+        })}
+      />
+    )}
   </div>
 );

@@ -3,8 +3,14 @@ import Image from "next/image";
 import React, { FC } from "react";
 
 import { CloseIcon, ShareIcon } from "@/shared/lib/icons";
-import { AdditionalInformation, Button, Container, Gap, TagsList } from "@/shared/ui/atoms";
-import { CardOtherOffer } from "@/shared/ui/atoms/CardOtherOffer";
+import {
+  AdditionalInformation,
+  Button,
+  CardOtherOffer,
+  Container,
+  Gap,
+  TagsList,
+} from "@/shared/ui/atoms";
 
 import styles from "./styles.module.scss";
 import { PreviewInWindowProps } from "./types";

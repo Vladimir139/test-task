@@ -21,4 +21,5 @@ export interface InputProps {
   title?: string;
   isRequired?: boolean;
   stretch?: boolean;
+  size?: "medium";
 }

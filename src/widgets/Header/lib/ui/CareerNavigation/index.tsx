@@ -1,4 +1,5 @@
 import cx from "classnames";
+import { useRouter } from "next/router";
 import React, { FC, useRef } from "react";
 
 import { careerNavItems } from "@/shared/lib/constants/navigationItems";
@@ -11,8 +12,16 @@ import { CareerNavigationProps } from "./types";
 
 export const CareerNavigation: FC<CareerNavigationProps> = ({ isShow, handleClose }) => {
   const ref = useRef(null);
+  const router = useRouter();
 
   useOnClickOutside(ref, handleClose);
+
+  const isMorePositionTop =
+    router.pathname === "/vacancy" ||
+    router.pathname === "/professions" ||
+    router.pathname === "/enterprises" ||
+    router.pathname === "/educational-establishments" ||
+    router.pathname === "/internships-and-practices";
 
   return (
     <div
@@ -24,6 +33,7 @@ export const CareerNavigation: FC<CareerNavigationProps> = ({ isShow, handleClos
       <section
         className={cx(styles.careerNavigation, {
           [styles.isShow]: isShow,
+          [styles.positionMoreTop]: isShow && isMorePositionTop,
         })}
       >
         <div className={styles.innerWrapper}>

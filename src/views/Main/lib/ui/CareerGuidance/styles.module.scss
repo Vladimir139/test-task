@@ -1,0 +1,52 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-width: 1000px;
+
+  margin: 30px auto 0;
+
+  gap: 40px;
+}
+
+.photo {
+  position: relative !important;
+
+  max-width: 500px;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.wrapperInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  gap: 20px;
+
+  max-width: 430px;
+}
+
+.linkMore {
+  color: #4198FF;
+  background-color: #DAEBFF;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+
+  border-radius: 5px;
+
+  padding: 10px 20px;
+}
