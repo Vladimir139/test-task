@@ -1,3 +1,5 @@
+import { ForwardedRef } from "react";
+
 export interface CardOfNewsAndArticlesProps {
   transliterationName: string;
   type: "article" | "news";
@@ -5,4 +7,5 @@ export interface CardOfNewsAndArticlesProps {
   createdAt: Date;
   title: string;
   previewDesc: string;
+  ref: ForwardedRef<HTMLAnchorElement>;
 }

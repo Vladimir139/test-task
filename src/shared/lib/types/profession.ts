@@ -1,7 +1,7 @@
 import { ITag } from "@/shared/lib/types/info";
 
 import { IEducationalEstablishments } from "./educationalEstablishments";
-import { IEnterprises } from "./enterprises";
+import { IEnterprise } from "./enterprises";
 import { IInternshipsAndPractices } from "./internshipsAndPractices";
 import { IVacancy } from "./vacancy";
 
@@ -26,8 +26,8 @@ export interface IProfession {
   // ----
   similarProfessions: IProfession[];
   otherProfessions: IProfession[];
-  educationalEstablishments: IEducationalEstablishments;
-  enterprises: IEnterprises[];
+  educationalEstablishments: IEducationalEstablishments[];
+  enterprises: IEnterprise[];
   internshipsAndInternships: IInternshipsAndPractices[];
   vacancy: IVacancy[];
 }

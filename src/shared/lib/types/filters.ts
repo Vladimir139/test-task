@@ -1,3 +1,5 @@
+import { ForwardedRef } from "react";
+
 export interface IFilter {
   id: number;
   name: string;
@@ -10,4 +12,5 @@ export interface FiltersProps {
   type: "checkbox" | "radio";
   filters: IFilter[];
   isOpen: boolean;
+  ref?: ForwardedRef<HTMLDivElement>;
 }

@@ -1,7 +1,7 @@
-import { IContact } from "@/shared/lib/types";
+import { IAdvantages, IContact, IStaff } from "@/shared/lib/types";
 import { ITag } from "@/shared/lib/types/info";
 
-import { IEnterprises } from "./enterprises";
+import { IEnterprise } from "./enterprises";
 import { IInternshipsAndPractices } from "./internshipsAndPractices";
 import { IProfession } from "./profession";
 import { IVacancy } from "./vacancy";
@@ -16,18 +16,25 @@ export interface IEducationalEstablishments {
   photos: string[];
   previewPhoto: string;
   description: string; // редактор
-  location: string;
+  fullNameLocation: string;
+  location: [number, number];
   city: string;
   knowledge: string[]; // можно вставить редактор описние или массив строк
   tags: ITag[];
   createdAt: Date;
   DateOfBirth: Date;
   contacts: IContact[];
+  site: string;
+  sizeUniversity: number[];
+  specialization: string;
+  staff: IStaff[];
+  advantagesOfTheEntity: IAdvantages[];
+  phone: string;
   // ----
   similarEducationalEstablishments: IEducationalEstablishments[];
   otherEducationalEstablishments: IEducationalEstablishments[];
   professions: IProfession[];
-  enterprises: IEnterprises[];
+  enterprises: IEnterprise[];
   internshipsAndInternships: IInternshipsAndPractices[];
   vacancy: IVacancy[];
 }

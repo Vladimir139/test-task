@@ -1,14 +1,16 @@
+import { motion } from "framer-motion";
 import React, { FC, useEffect, useState } from "react";
 
+import { bottomToTop100Animation } from "@/shared/lib/constants";
 import {
   IAdditionalText,
   IEducationalEstablishments,
-  IEnterprises,
+  IEnterprise,
   IInternshipsAndPractices,
   IProfession,
   IVacancy,
 } from "@/shared/lib/types";
-import { Card, PreviewInWindow } from "@/shared/ui/atoms";
+import { MCard, PreviewInWindow } from "@/shared/ui/atoms";
 
 import styles from "./styles.module.scss";
 import { CardsListProps } from "./types";
@@ -66,16 +68,23 @@ export const CardsList: FC<CardsListProps> = ({ entities }) => {
         | IVacancy
         | IProfession
         | IEducationalEstablishments
-        | IEnterprises
+        | IEnterprise
         | IInternshipsAndPractices,
     ) => entity.id === idCardPreview,
   );
 
   return (
     <>
-      <div className={styles.list}>
-        {cards.map((card) => (
-          <Card
+      <motion.div
+        className={styles.list}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
+        {cards.map((card, index) => (
+          <MCard
+            custom={(index + 1) / 3}
+            variants={bottomToTop100Animation}
             key={card.id}
             onClick={() => setIdCardPreview(card.id)}
             transliterationName={card.transliterationName}
@@ -90,7 +99,7 @@ export const CardsList: FC<CardsListProps> = ({ entities }) => {
             salary={card.salary}
           />
         ))}
-      </div>
+      </motion.div>
       <PreviewInWindow
         entity={selectedEntity}
         isOpen={!!idCardPreview}

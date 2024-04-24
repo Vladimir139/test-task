@@ -15,6 +15,7 @@
     "classnames": "^2.5.1",
     "effector": "^23.2.0",
     "effector-react": "^23.2.0",
+    "framer-motion": "^11.1.7",
     "js-cookie": "^3.0.5",
     "next": "13.3.0",
     "normalize.css": "^8.0.1",

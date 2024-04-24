@@ -1,5 +1,3 @@
-import { IContact } from "@/shared/lib/types/contact";
-
 export interface ITag {
   name: string;
 }
@@ -11,6 +9,11 @@ export interface IAdditionalText {
 export interface IAdvantages {
   icon: string | SVGElement;
   text: string;
+}
+
+export interface IContact {
+  name: string;
+  contact: string;
 }
 
 export interface IStaff {

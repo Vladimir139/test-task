@@ -1,3 +1,5 @@
+import { ForwardedRef } from "react";
+
 import { IAdditionalText, ITag } from "@/shared/lib/types/info";
 
 export interface ICard {
@@ -19,4 +21,5 @@ export interface ICard {
 
 export interface CardProps extends ICard {
   onClick: () => void;
+  ref?: ForwardedRef<HTMLDivElement>;
 }

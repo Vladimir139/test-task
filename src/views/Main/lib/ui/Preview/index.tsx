@@ -1,11 +1,21 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React, { FC } from "react";
+
+import { leftToRight100Animation, rightToLeft100Animation } from "@/shared/lib/constants";
 
 import styles from "./styles.module.scss";
 
 export const Preview: FC = () => (
   <section className={styles.wrapper}>
-    <div className={styles.leftWrapper}>
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      variants={leftToRight100Animation}
+      viewport={{ amount: 0.2 }}
+      custom={1}
+      className={styles.leftWrapper}
+    >
       <h3 className={styles.sloganTitle}>
         <span>Найти.ру</span> <br />
         Определись с
@@ -28,12 +38,20 @@ export const Preview: FC = () => (
       {/*    </div> */}
       {/*  } */}
       {/* /> */}
-    </div>
-    <Image
-      src="/images/mainPreview.png"
-      alt="Парень стоит на фоне библиотеки, в одной руке у него книга, а друой он показывает большой палец вверх"
-      fill
-      className={styles.previewImage}
-    />
+    </motion.div>
+    <motion.div
+      initial="hidden"
+      viewport={{ amount: 0.2 }}
+      whileInView="visible"
+      variants={rightToLeft100Animation}
+      custom={1}
+    >
+      <Image
+        src="/images/mainPreview.png"
+        alt="Парень стоит на фоне библиотеки, в одной руке у него книга, а друой он показывает большой палец вверх"
+        fill
+        className={styles.previewImage}
+      />
+    </motion.div>
   </section>
 );

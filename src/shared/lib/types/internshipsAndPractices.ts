@@ -1,8 +1,8 @@
-import { IContact } from "@/shared/lib/types";
+import { IAdvantages, IContact, IStaff } from "@/shared/lib/types";
 import { ITag } from "@/shared/lib/types/info";
 
 import { IEducationalEstablishments } from "./educationalEstablishments";
-import { IEnterprises } from "./enterprises";
+import { IEnterprise } from "./enterprises";
 import { IProfession } from "./profession";
 import { IVacancy } from "./vacancy";
 
@@ -12,7 +12,7 @@ export interface IInternshipsAndPractices {
   typeInternship: "internship" | "practice";
   name: string;
   transliterationName: string;
-  enterprise: IEnterprises;
+  enterprise: IEnterprise;
   profession: IProfession;
   icon: string;
   startSalary: number;
@@ -23,17 +23,23 @@ export interface IInternshipsAndPractices {
   photos: string[];
   previewPhoto: string;
   description: string; // редактор
-  location: string;
+  fullNameLocation: string;
+  location: [number, number];
   knowledge: string[]; // можно вставить редактор описние или массив строк
   tags: ITag[];
   createdAt: Date;
   contacts: IContact[];
   city: string;
+  sizeInternshipsOrPractice: number[];
+  specialization: string;
+  staff: IStaff[];
+  advantagesOfTheEntity: IAdvantages[];
+  phone: string;
   // ----
   similarInternshipsAndPractices: IInternshipsAndPractices[];
   otherInternshipsAndPractices: IInternshipsAndPractices[];
-  educationalEstablishments: IEducationalEstablishments;
-  enterprises: IEnterprises[];
+  educationalEstablishments: IEducationalEstablishments[];
+  enterprises: IEnterprise[];
   professions: IProfession[];
   vacancy: IVacancy[];
 }

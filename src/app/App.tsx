@@ -70,7 +70,7 @@ export const App: FC<AppProps> = ({ children }) => {
           Пройти тестирование
         </Button>
         <Link href="/" className={styles.linkGoHome}>
-          Перейти на главную
+          Остаться на главной
         </Link>
       </Modal>
     </>
