@@ -1,7 +1,7 @@
 import { IAdvantages, IContact, IStaff } from "@/shared/lib/types";
 import { ITag } from "@/shared/lib/types/info";
 
-import { IEnterprise } from "./enterprises";
+import { IEnterprise } from "./enterprise";
 import { IInternshipsAndPractices } from "./internshipsAndPractices";
 import { IProfession } from "./profession";
 import { IVacancy } from "./vacancy";

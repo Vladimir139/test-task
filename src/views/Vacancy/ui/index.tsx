@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import { cardsVacancy } from "@/shared/lib/constants/cards";
+import { vacancyList } from "@/shared/lib/constants/demo";
 import { CardsList, Gap } from "@/shared/ui/atoms";
 import { FilterSidebar } from "@/shared/ui/templates";
 
@@ -11,9 +11,9 @@ export const VacancyPage: FC = () => (
     <FilterSidebar />
     <div>
       <Gap />
-      <h1>Рекомендованные вакансии (VacancyPage) - {cardsVacancy.length}</h1>
+      <h1>Рекомендованные вакансии (VacancyPage) - {vacancyList.length}</h1>
       <Gap />
-      <CardsList entities={cardsVacancy} />
+      <CardsList entities={vacancyList} />
       <Gap />
     </div>
   </div>

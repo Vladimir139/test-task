@@ -34,7 +34,7 @@ export const HorizontalFilters: FC = () => {
               step={1}
               minValue={0}
               maxValue={1000000}
-              startSalary={100000}
+              startSalary={0}
               endSalary={300000}
             />
           </div>

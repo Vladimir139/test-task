@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import React, { FC } from "react";
 
 import { leftToRight100Animation, rightToLeft100Animation } from "@/shared/lib/constants";
@@ -23,7 +24,10 @@ export const WhoAreWe: FC = () => (
           интересуется возможностью работы в <b>Ярославле и Ярославской области</b>.
         </p>
         <p className={styles.text}>
-          Мы предоставляем возможность поиска информации о
+          <Link href="/team">
+            <span style={{ textDecoration: "underline" }}>Мы</span>
+          </Link>
+          &nbsp;предоставляем возможность поиска информации о
           <b>профессиях, обучении, стажировках, практике и работе на местных предприятиях.</b> Мы
           стремимся помочь каждому пользователю <span>найти свое место в жизни.</span>
         </p>

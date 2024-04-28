@@ -1,9 +1,10 @@
-import { ITag } from "@/shared/lib/types/info";
-
-import { IEducationalEstablishments } from "./educationalEstablishments";
-import { IEnterprise } from "./enterprises";
-import { IInternshipsAndPractices } from "./internshipsAndPractices";
-import { IVacancy } from "./vacancy";
+import {
+  IEducationalEstablishments,
+  IEnterprise,
+  IInternshipsAndPractices,
+  ITag,
+  IVacancy,
+} from "@/shared/lib/types";
 
 export interface IProfession {
   id: number;

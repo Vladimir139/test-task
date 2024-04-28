@@ -19,7 +19,6 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
           <Component {...pageProps} />
         </App>
         <motion.div
-          // className="slide-in"
           style={{
             position: "absolute",
             top: 0,
@@ -35,7 +34,6 @@ const MyApp: FC<AppProps> = ({ Component, pageProps }) => {
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
         />
         <motion.div
-          // className="slide-out"
           style={{
             position: "absolute",
             top: 0,

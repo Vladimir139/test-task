@@ -9,9 +9,8 @@ import { IVacancy } from "./vacancy";
 export interface IEnterprise {
   id: number;
   name: string;
-  type: "enterprises";
+  type: "enterprise";
   transliterationName: string;
-  enterprise: IEnterprise;
   profession: IProfession;
   icon: string;
   startSalary: number;
@@ -37,7 +36,7 @@ export interface IEnterprise {
   // ----
   similarEnterprises: IEnterprise[];
   otherEnterprises: IEnterprise[];
-  educationalEstablishments: IEducationalEstablishments;
+  educationalEstablishments: IEducationalEstablishments[];
   professions: IProfession[];
   internshipsAndInternships: IInternshipsAndPractices[];
   vacancy: IVacancy[];

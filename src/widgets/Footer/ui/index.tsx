@@ -54,8 +54,13 @@ export const Footer: FC = () => (
             </li>
           </ul>
         </div>
-        <div className={styles.block}>
-          <h3 className={styles.title}>Предприятиям и учебным заведениям</h3>
+        <div className={styles.blockLinks}>
+          <Link className={styles.title} href="/">
+            Предприятиям и учебным заведениям
+          </Link>
+          <Link className={styles.title} href="/team">
+            Команда
+          </Link>
         </div>
         <div className={styles.wrapperButton}>
           <Link href="/test" className={styles.linkTest}>

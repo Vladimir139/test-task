@@ -7,5 +7,6 @@ export * from "./NewsAndArticles/ui";
 export * from "./NotFound/ui";
 export * from "./Professions/ui";
 export * from "./SingleNewsOrArticlePage/ui";
+export * from "./Team/ui";
 export * from "./Test/ui";
 export * from "./Vacancy/ui";

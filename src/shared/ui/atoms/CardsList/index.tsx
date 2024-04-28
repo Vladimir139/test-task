@@ -34,19 +34,19 @@ export const CardsList: FC<CardsListProps> = ({ entities }) => {
     salary: {
       value:
         entity.type !== "profession" &&
-        entity.type !== "enterprises" &&
+        entity.type !== "enterprise" &&
         entity.type !== "educationalEstablishments"
           ? [entity.startSalary || 0, entity.endSalary || 0]
           : [],
       salaryPeriod:
         entity.type !== "profession" &&
-        entity.type !== "enterprises" &&
+        entity.type !== "enterprise" &&
         entity.type !== "educationalEstablishments"
           ? entity.salaryPeriod
           : "month",
       salaryCurrency:
         entity.type !== "profession" &&
-        entity.type !== "enterprises" &&
+        entity.type !== "enterprise" &&
         entity.type !== "educationalEstablishments"
           ? entity.salaryCurrency
           : "rub",

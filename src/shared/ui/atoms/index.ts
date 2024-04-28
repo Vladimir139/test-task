@@ -12,6 +12,7 @@ export * from "./Gap";
 export * from "./Input";
 export * from "./Modal";
 export * from "./NavReview";
+export * from "./PersonCard";
 export * from "./PreviewInWindow";
 export * from "./Select";
 export * from "./ShortBlockInfo";

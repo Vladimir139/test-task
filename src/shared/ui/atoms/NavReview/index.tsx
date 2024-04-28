@@ -47,7 +47,7 @@ export const NavReview: FC<NavReviewProps> = ({
           </p>
         </div>
         <p className={styles.showMoreReviewsBtn}>
-          Смотреть больше отзывов <ArrowXIcon />
+          Смотреть больше новостей <ArrowXIcon />
         </p>
       </div>
     </div>
