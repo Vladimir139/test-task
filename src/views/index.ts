@@ -1,3 +1,5 @@
+export * from "./ApplicationsPage/ui";
+export * from "./AuthPage/ui";
 export * from "./EducationalEstablishments/ui";
 export * from "./Enterprises/ui";
 export * from "./EntityInfo/ui";
@@ -5,8 +7,10 @@ export * from "./InternshipsAndPractices/ui";
 export * from "./Main/ui";
 export * from "./NewsAndArticles/ui";
 export * from "./NotFound/ui";
+export * from "./PreviewAccountPage/ui";
 export * from "./Professions/ui";
 export * from "./SingleNewsOrArticlePage/ui";
 export * from "./Team/ui";
 export * from "./Test/ui";
+export * from "./UserPage/ui";
 export * from "./Vacancy/ui";

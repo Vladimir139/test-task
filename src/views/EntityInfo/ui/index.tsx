@@ -73,7 +73,7 @@ export const EntityInfoPage: FC<EntityInfoPageProps> = () => (
                 surname: "Абрамович",
                 middleName: "Юрьевич",
                 position: "Основатель СЕВЕРМАШ",
-                contact: { name: "Иван Юрьевич", contact: "7-777-777-777" },
+                contactStaff: { name: "Иван Юрьевич", contact: "7-777-777-777", type: "phone" },
               },
               {
                 id: 2,
@@ -82,7 +82,7 @@ export const EntityInfoPage: FC<EntityInfoPageProps> = () => (
                 surname: "Абрамович",
                 middleName: "Юрьевич",
                 position: "Основатель СЕВЕРМАШ",
-                contact: { name: "Иван Юрьевич", contact: "7-777-777-777" },
+                contactStaff: { name: "Иван Юрьевич", contact: "7-777-777-777", type: "phone" },
               },
               {
                 id: 3,
@@ -91,7 +91,7 @@ export const EntityInfoPage: FC<EntityInfoPageProps> = () => (
                 surname: "Абрамович",
                 middleName: "Юрьевич",
                 position: "Основатель СЕВЕРМАШ",
-                contact: { name: "Иван Юрьевич", contact: "7-777-777-777" },
+                contactStaff: { name: "Иван Юрьевич", contact: "7-777-777-777", type: "phone" },
               },
               {
                 id: 4,
@@ -100,7 +100,7 @@ export const EntityInfoPage: FC<EntityInfoPageProps> = () => (
                 surname: "Абрамович",
                 middleName: "Юрьевич",
                 position: "Основатель СЕВЕРМАШ",
-                contact: { name: "Иван Юрьевич", contact: "7-777-777-777" },
+                contactStaff: { name: "Иван Юрьевич", contact: "7-777-777-777", type: "phone" },
               },
               {
                 id: 5,
@@ -109,7 +109,7 @@ export const EntityInfoPage: FC<EntityInfoPageProps> = () => (
                 surname: "Абрамович",
                 middleName: "Юрьевич",
                 position: "Основатель СЕВЕРМАШ",
-                contact: { name: "Иван Юрьевич", contact: "7-777-777-777" },
+                contactStaff: { name: "Иван Юрьевич", contact: "7-777-777-777", type: "phone" },
               },
             ]}
           />

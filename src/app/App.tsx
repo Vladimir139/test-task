@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { FC, useState } from "react";
 
 import { Button, Container, Modal } from "@/shared/ui/atoms";
-import { HorizontalFilters } from "@/shared/ui/templates";
+import { CreateNewResponse, HorizontalFilters } from "@/shared/ui/templates";
 import { Footer, Header } from "@/widgets";
 
 import styles from "./styles.module.scss";
@@ -14,6 +14,7 @@ export const App: FC<AppProps> = ({ children }) => {
   const router = useRouter();
 
   const [isOpenedModal, setIsOpenedModal] = useState(false);
+  const [isOpenedResponse, setIsOpenedResponse] = useState(false);
 
   const isShowFilters =
     router.pathname === "/vacancy" ||
@@ -72,6 +73,9 @@ export const App: FC<AppProps> = ({ children }) => {
         <Link href="/" className={styles.linkGoHome}>
           Остаться на главной
         </Link>
+      </Modal>
+      <Modal handleClose={() => setIsOpenedResponse(false)} isOpened={isOpenedResponse} size="big">
+        <CreateNewResponse />
       </Modal>
     </>
   );

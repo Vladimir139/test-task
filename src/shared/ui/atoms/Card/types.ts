@@ -22,4 +22,6 @@ export interface ICard {
 export interface CardProps extends ICard {
   onClick: () => void;
   ref?: ForwardedRef<HTMLDivElement>;
+  isEditCard?: boolean;
+  isSavedCard?: boolean;
 }

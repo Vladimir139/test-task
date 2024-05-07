@@ -6,5 +6,6 @@ export interface SelectProps {
   value: string;
   isOpen: boolean;
   noBorderBottom?: boolean;
+  stretch?: boolean;
   onClick?: () => void;
 }

@@ -9,6 +9,6 @@ export interface ButtonProps {
   size?: "medium" | "normal" | "average";
   textSize?: "medium" | "default";
   radius?: "normal" | "medium" | "small" | "little";
-  theme?: "blue" | "dark" | "outline" | "outlineBlue" | "darkBlue" | "outlineDarkBlue";
+  theme?: "blue" | "dark" | "outline" | "outlineBlue" | "darkBlue" | "outlineDarkBlue" | "red";
   onClick?: () => void;
 }

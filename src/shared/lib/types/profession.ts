@@ -23,7 +23,7 @@ export interface IProfession {
   subcategories: IProfession[];
   knowledge: string[]; // можно вставить редактор описние или массив строк
   tags: ITag[];
-  DateOfBirth: Date;
+  dateOfBirth: Date;
   // ----
   similarProfessions: IProfession[];
   otherProfessions: IProfession[];

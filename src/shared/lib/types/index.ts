@@ -7,4 +7,5 @@ export * from "./logo";
 export * from "./profession";
 export * from "./sphere";
 export * from "./test";
+export * from "./user";
 export * from "./vacancy";

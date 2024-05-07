@@ -22,6 +22,7 @@ export const Button: FC<ButtonProps> = ({
     className={cx(styles.button, {
       [styles.themeBlue]: theme === "blue",
       [styles.themeDark]: theme === "dark",
+      [styles.themeRed]: theme === "red",
       [styles.themeDarkBlue]: theme === "darkBlue",
       [styles.themeOutlineDarkBlue]: theme === "outlineDarkBlue",
       [styles.themeOutlineBlue]: theme === "outlineBlue",

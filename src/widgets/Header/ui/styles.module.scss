@@ -36,6 +36,25 @@
   position: relative;
 }
 
+.leftWrapper {
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+
+  width: 100%;
+  max-width: 557px;
+}
+
+.rightWrapper {
+  display: flex;
+  align-items: center;
+
+  gap: 40px;
+
+  width: 100%;
+}
+
 .wrapperSearchFoundBlock {
   position: absolute;
   top: 100%;
@@ -56,4 +75,27 @@
   overflow: visible;
   opacity: 1;
   display: block;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+
+  gap: 5px;
+}
+
+.userPhoto {
+  position: relative !important;
+
+  width: 50px;
+  height: 50px;
+
+  background-color: #898B92;
+  border-radius: 999px;
+}
+
+.userEmail {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 100%;
 }

@@ -11,10 +11,12 @@ export const Select: FC<SelectProps> = ({
   isOpen,
   noBorderBottom,
   onClick,
+  stretch,
 }) => (
   <div
     className={cx(styles.select, {
       [styles.noBorderBottom]: noBorderBottom,
+      [styles.stretch]: stretch,
     })}
     onClick={onClick}
   >

@@ -14,7 +14,7 @@ export const Navigation: FC<{
   const router = useRouter();
 
   return (
-    <nav>
+    <nav className={styles.navigation}>
       <ul className={styles.navLinks}>
         <li>
           <Link

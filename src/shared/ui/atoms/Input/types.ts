@@ -1,4 +1,5 @@
 import { ChangeEvent, ReactNode } from "react";
+import { UseFormRegisterReturn } from "react-hook-form";
 
 export interface InputProps {
   placeholder?: string;
@@ -16,7 +17,7 @@ export interface InputProps {
     | "search"
     | "date";
   defaultValue?: string;
-  value?: string;
+  value?: string | Date | number;
   onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
   title?: string;
   isRequired?: boolean;
@@ -25,4 +26,5 @@ export interface InputProps {
   borderBottomNone?: boolean;
   onFocus?: () => void;
   onBlur?: () => void;
+  handleRegister?: () => UseFormRegisterReturn;
 }

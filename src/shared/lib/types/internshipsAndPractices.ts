@@ -35,6 +35,8 @@ export interface IInternshipsAndPractices {
   staff: IStaff[];
   advantagesOfTheEntity: IAdvantages[];
   phone: string;
+  views: number;
+  responses: number;
   // ----
   similarInternshipsAndPractices: IInternshipsAndPractices[];
   otherInternshipsAndPractices: IInternshipsAndPractices[];

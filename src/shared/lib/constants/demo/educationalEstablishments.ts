@@ -14,13 +14,11 @@ export const educationalEstablishmentsList: IEducationalEstablishments[] = [
     fullNameLocation: "Yaroslavl",
     location: [1, 2],
     city: "city educationalEstablishments",
-    knowledge: [""], // можно вставить редактор описние или массив строк
     tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
     createdAt: new Date(),
-    DateOfBirth: new Date(),
-    contacts: [{ name: "Vladimir", contact: "Zenovsky" }],
+    dateOfBirth: new Date(),
+    contacts: [{ id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" }],
     site: "www.site.ru",
-    sizeUniversity: [10],
     specialization: "specialization educationalEstablishments",
     staff: [
       {
@@ -30,7 +28,7 @@ export const educationalEstablishmentsList: IEducationalEstablishments[] = [
         surname: "Абрамович",
         middleName: "Юрьевич",
         position: "Основатель СЕВЕРМАШ",
-        contact: { name: "Иван Юрьевич", contact: "7-777-777-777" },
+        contactStaff: { id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" },
       },
     ],
     advantagesOfTheEntity: [{ icon: "icon", text: "Льготы по здоровью" }],
@@ -50,13 +48,11 @@ export const educationalEstablishmentsList: IEducationalEstablishments[] = [
         fullNameLocation: "Yaroslavl",
         location: [1, 2],
         city: "city educationalEstablishments",
-        knowledge: [""], // можно вставить редактор описние или массив строк
         tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
         createdAt: new Date(),
-        DateOfBirth: new Date(),
-        contacts: [{ name: "Vladimir", contact: "Zenovsky" }],
+        dateOfBirth: new Date(),
+        contacts: [{ id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" }],
         site: "www.site.ru",
-        sizeUniversity: [10],
         specialization: "specialization educationalEstablishments",
         staff: [
           {
@@ -66,7 +62,7 @@ export const educationalEstablishmentsList: IEducationalEstablishments[] = [
             surname: "Абрамович",
             middleName: "Юрьевич",
             position: "Основатель СЕВЕРМАШ",
-            contact: { name: "Иван Юрьевич", contact: "7-777-777-777" },
+            contactStaff: { id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" },
           },
         ],
         advantagesOfTheEntity: [{ icon: "icon", text: "Льготы по здоровью" }],
@@ -94,13 +90,11 @@ export const educationalEstablishmentsList: IEducationalEstablishments[] = [
         fullNameLocation: "Yaroslavl",
         location: [1, 2],
         city: "city educationalEstablishments",
-        knowledge: [""], // можно вставить редактор описние или массив строк
         tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
         createdAt: new Date(),
-        DateOfBirth: new Date(),
-        contacts: [{ name: "Vladimir", contact: "Zenovsky" }],
+        dateOfBirth: new Date(),
+        contacts: [{ id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" }],
         site: "www.site.ru",
-        sizeUniversity: [10],
         specialization: "specialization educationalEstablishments",
         staff: [
           {
@@ -110,7 +104,7 @@ export const educationalEstablishmentsList: IEducationalEstablishments[] = [
             surname: "Абрамович",
             middleName: "Юрьевич",
             position: "Основатель СЕВЕРМАШ",
-            contact: { name: "Иван Юрьевич", contact: "7-777-777-777" },
+            contactStaff: { id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" },
           },
         ],
         advantagesOfTheEntity: [{ icon: "icon", text: "Льготы по здоровью" }],

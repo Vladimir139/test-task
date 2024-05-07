@@ -37,29 +37,37 @@ export const Header: FC = () => {
     >
       <Container>
         <div className={styles.headerInnerWrapper}>
-          <div className={styles.wrapperInput}>
-            <Input
-              onFocus={() => setIsVisible(true)}
-              onBlur={() => setIsVisible(false)}
-              borderBottomNone={isVisible}
-              placeholder="Введите название вакансии, компании..."
-              firstIcon={<MagnifierIcon />}
-            />
-            <div
-              className={cx(styles.wrapperSearchFoundBlock, {
-                [styles.visibleSearchFoundBlock]: isVisible,
-              })}
-            >
-              <SearchFoundBlock />
+          <div className={styles.leftWrapper}>
+            <Link href="/" className={styles.title}>
+              Найти<span style={{ color: "#0B7BFF" }}>.ру</span>
+            </Link>
+            <div className={styles.wrapperInput}>
+              <Input
+                onFocus={() => setIsVisible(true)}
+                onBlur={() => setIsVisible(false)}
+                borderBottomNone={isVisible}
+                placeholder="Введите название вакансии, компании..."
+                firstIcon={<MagnifierIcon />}
+              />
+              <div
+                className={cx(styles.wrapperSearchFoundBlock, {
+                  [styles.visibleSearchFoundBlock]: isVisible,
+                })}
+              >
+                <SearchFoundBlock />
+              </div>
             </div>
           </div>
-          <Navigation
-            isActiveCareerLink={isShowCareerNav}
-            setIsActiveCareerLink={setIsShowCareerNav}
-          />
-          <Link href="/" className={styles.title}>
-            Найти<span style={{ color: "#0B7BFF" }}>.ру</span>
-          </Link>
+          <div className={styles.rightWrapper}>
+            <Navigation
+              isActiveCareerLink={isShowCareerNav}
+              setIsActiveCareerLink={setIsShowCareerNav}
+            />
+            <Link href="/im" className={styles.userInfo}>
+              <p className={styles.userEmail}>email@gmail.com</p>
+              <div className={styles.userPhoto} />
+            </Link>
+          </div>
         </div>
       </Container>
       <CareerNavigation isShow={isShowCareerNav} handleClose={() => setIsShowCareerNav(false)} />

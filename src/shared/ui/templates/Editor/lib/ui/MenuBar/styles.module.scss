@@ -1,0 +1,26 @@
+.menuBar {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-bottom: 20px;
+}
+
+.menuBar button {
+  background-color: inherit;
+
+  border-radius: 5px;
+  border: 1px solid #000000;
+
+  padding: 0 2px 4px 2px;
+
+  height: 28px;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}

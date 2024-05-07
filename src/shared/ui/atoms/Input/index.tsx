@@ -18,36 +18,49 @@ export const Input: FC<InputProps> = ({
   secondIcon,
   size,
   borderBottomNone,
+  handleRegister,
   ...props
 }) => {
+  const handleGetRegister = () => {
+    if (handleRegister) {
+      return handleRegister();
+    }
+
+    return {};
+  };
+
   if (title) {
-    <div className={styles.wrapper}>
-      {title && (
-        <>
-          {title} {isRequired && <span style={{ color: "red" }}>*</span>}
-        </>
-      )}
-      <label
-        className={cx(styles.label, {
-          [styles.sizeMedium]: size === "medium",
-          [styles.borderBottomNone]: borderBottomNone,
-        })}
-      >
-        {firstIcon || null}
-        <input
-          {...props}
-          type={type}
-          name={name}
-          value={value}
-          defaultValue={defaultValue}
-          onChange={onChange}
-          placeholder={placeholder}
-          className={cx(styles.input, {
-            stretch,
+    return (
+      <div className={styles.wrapper}>
+        {title && (
+          <>
+            {title} {isRequired && <span style={{ color: "red" }}>*</span>}
+          </>
+        )}
+        <label
+          className={cx(styles.label, {
+            [styles.sizeMedium]: size === "medium",
+            [styles.borderBottomNone]: borderBottomNone,
           })}
-        />
-      </label>
-    </div>;
+        >
+          {firstIcon || null}
+          <input
+            {...handleGetRegister()}
+            {...props}
+            type={type}
+            name={name}
+            // @ts-ignore
+            value={value}
+            defaultValue={defaultValue}
+            onChange={onChange}
+            placeholder={placeholder}
+            className={cx(styles.input, {
+              stretch,
+            })}
+          />
+        </label>
+      </div>
+    );
   }
 
   return (
@@ -59,9 +72,11 @@ export const Input: FC<InputProps> = ({
     >
       {firstIcon && <span style={{ display: "flex" }}>{firstIcon}</span>}
       <input
+        {...handleGetRegister()}
         {...props}
         type={type}
         name={name}
+        // @ts-ignore
         value={value}
         defaultValue={defaultValue}
         onChange={onChange}

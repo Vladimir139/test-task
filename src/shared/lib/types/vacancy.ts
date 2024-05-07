@@ -35,6 +35,8 @@ export interface IVacancy {
   staff: IStaff[];
   advantagesOfTheEntity: IAdvantages[];
   phone: string;
+  views: number;
+  responses: number;
   // ----
   similarVacancy?: IVacancy[];
   otherVacancy?: IVacancy[];

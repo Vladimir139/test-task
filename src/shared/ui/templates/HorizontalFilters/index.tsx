@@ -2,7 +2,7 @@ import React, { FC, useState } from "react";
 
 import { ArrowYIcon, MagnifierIcon } from "@/shared/lib/icons";
 import { Container, Input, Select } from "@/shared/ui/atoms";
-import { FoundEntitiesList, SalaryRange } from "@/shared/ui/molecules";
+import { SalaryRange, SelectList } from "@/shared/ui/molecules";
 
 import styles from "./styles.module.scss";
 
@@ -25,7 +25,17 @@ export const HorizontalFilters: FC = () => {
                 isOpen={false}
                 noBorderBottom={isOpenLocation}
               />
-              <FoundEntitiesList isVisible={isOpenLocation} />
+              <SelectList
+                isVisible={isOpenLocation}
+                handleClose={() => setIsOpenLocation(false)}
+                items={[
+                  { id: 1, value: "kirovsky", title: "Кировский район" },
+                  { id: 2, value: "krasnoperekopsky", title: "Красноперекопский район" },
+                  { id: 3, value: "leninsky", title: "Ленинский район" },
+                ]}
+                // @ts-ignore
+                handleChange={() => {}}
+              />
             </div>
           </div>
           <div className={styles.rightWrapper}>

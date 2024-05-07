@@ -3,6 +3,8 @@ import { IInternshipsAndPractices } from "@/shared/lib/types";
 export const internshipsAndPracticesList: IInternshipsAndPractices[] = [
   {
     id: 1,
+    responses: 111,
+    views: 1111,
     type: "internshipsAndPractices",
     typeInternship: "practice",
     name: "name internshipsAndPractices",
@@ -29,7 +31,7 @@ export const internshipsAndPracticesList: IInternshipsAndPractices[] = [
         subcategories: [], // IProfession[]
         knowledge: [""], // можно вставить редактор описние или массив строк
         tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
-        DateOfBirth: new Date(),
+        dateOfBirth: new Date(),
         // ----
         similarProfessions: [],
         otherProfessions: [],
@@ -50,11 +52,10 @@ export const internshipsAndPracticesList: IInternshipsAndPractices[] = [
       knowledge: [""], // можно вставить редактор описние или массив строк
       tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
       createdAt: new Date(),
-      DateOfBirth: new Date(),
-      contacts: [{ name: "Vladimir", contact: "Zenovsky" }],
+      dateOfBirth: new Date(),
+      contacts: [{ id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" }],
       city: "city enterprise",
       site: "site enterprise",
-      sizeCompany: [10],
       specialization: "specialization enterprise",
       staff: [
         {
@@ -64,7 +65,7 @@ export const internshipsAndPracticesList: IInternshipsAndPractices[] = [
           surname: "Абрамович",
           middleName: "Юрьевич",
           position: "Основатель СЕВЕРМАШ",
-          contact: { name: "Иван Юрьевич", contact: "7-777-777-777" },
+          contactStaff: { id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" },
         },
       ],
       advantagesOfTheEntity: [{ icon: "icon", text: "Льготы по здоровью" }],
@@ -94,7 +95,7 @@ export const internshipsAndPracticesList: IInternshipsAndPractices[] = [
       subcategories: [], // IProfession[]
       knowledge: [""], // можно вставить редактор описние или массив строк
       tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
-      DateOfBirth: new Date(),
+      dateOfBirth: new Date(),
       // ----
       similarProfessions: [],
       otherProfessions: [],
@@ -117,7 +118,7 @@ export const internshipsAndPracticesList: IInternshipsAndPractices[] = [
     knowledge: [""], // можно вставить редактор описние или массив строк
     tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
     createdAt: new Date(),
-    contacts: [{ name: "Vladimir", contact: "Zenovsky" }],
+    contacts: [{ id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" }],
     city: "Yaroslavl",
     sizeInternshipsOrPractice: [10],
     specialization: "specialization internshipsAndPractices",
@@ -129,7 +130,7 @@ export const internshipsAndPracticesList: IInternshipsAndPractices[] = [
         surname: "Абрамович",
         middleName: "Юрьевич",
         position: "Основатель СЕВЕРМАШ",
-        contact: { name: "Иван Юрьевич", contact: "7-777-777-777" },
+        contactStaff: { id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" },
       },
     ],
     advantagesOfTheEntity: [{ icon: "icon", text: "Льготы по здоровью" }],
@@ -138,6 +139,8 @@ export const internshipsAndPracticesList: IInternshipsAndPractices[] = [
     similarInternshipsAndPractices: [
       {
         id: 1,
+        responses: 111,
+        views: 1111,
         type: "internshipsAndPractices",
         typeInternship: "practice",
         name: "name internshipsAndPractices",
@@ -164,7 +167,7 @@ export const internshipsAndPracticesList: IInternshipsAndPractices[] = [
             subcategories: [], // IProfession[]
             knowledge: [""], // можно вставить редактор описние или массив строк
             tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
-            DateOfBirth: new Date(),
+            dateOfBirth: new Date(),
             // ----
             similarProfessions: [],
             otherProfessions: [],
@@ -185,11 +188,10 @@ export const internshipsAndPracticesList: IInternshipsAndPractices[] = [
           knowledge: [""], // можно вставить редактор описние или массив строк
           tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
           createdAt: new Date(),
-          DateOfBirth: new Date(),
-          contacts: [{ name: "Vladimir", contact: "Zenovsky" }],
+          dateOfBirth: new Date(),
+          contacts: [{ id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" }],
           city: "city enterprise",
           site: "site enterprise",
-          sizeCompany: [10],
           specialization: "specialization enterprise",
           staff: [
             {
@@ -199,7 +201,7 @@ export const internshipsAndPracticesList: IInternshipsAndPractices[] = [
               surname: "Абрамович",
               middleName: "Юрьевич",
               position: "Основатель СЕВЕРМАШ",
-              contact: { name: "Иван Юрьевич", contact: "7-777-777-777" },
+              contactStaff: { id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" },
             },
           ],
           advantagesOfTheEntity: [{ icon: "icon", text: "Льготы по здоровью" }],
@@ -229,7 +231,7 @@ export const internshipsAndPracticesList: IInternshipsAndPractices[] = [
           subcategories: [], // IProfession[]
           knowledge: [""], // можно вставить редактор описние или массив строк
           tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
-          DateOfBirth: new Date(),
+          dateOfBirth: new Date(),
           // ----
           similarProfessions: [],
           otherProfessions: [],
@@ -252,7 +254,7 @@ export const internshipsAndPracticesList: IInternshipsAndPractices[] = [
         knowledge: [""], // можно вставить редактор описние или массив строк
         tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
         createdAt: new Date(),
-        contacts: [{ name: "Vladimir", contact: "Zenovsky" }],
+        contacts: [{ id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" }],
         city: "Yaroslavl",
         sizeInternshipsOrPractice: [10],
         specialization: "specialization internshipsAndPractices",
@@ -264,7 +266,7 @@ export const internshipsAndPracticesList: IInternshipsAndPractices[] = [
             surname: "Абрамович",
             middleName: "Юрьевич",
             position: "Основатель СЕВЕРМАШ",
-            contact: { name: "Иван Юрьевич", contact: "7-777-777-777" },
+            contactStaff: { id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" },
           },
         ],
         advantagesOfTheEntity: [{ icon: "icon", text: "Льготы по здоровью" }],
@@ -281,6 +283,8 @@ export const internshipsAndPracticesList: IInternshipsAndPractices[] = [
     otherInternshipsAndPractices: [
       {
         id: 1,
+        responses: 111,
+        views: 1111,
         type: "internshipsAndPractices",
         typeInternship: "practice",
         name: "name internshipsAndPractices",
@@ -307,7 +311,7 @@ export const internshipsAndPracticesList: IInternshipsAndPractices[] = [
             subcategories: [], // IProfession[]
             knowledge: [""], // можно вставить редактор описние или массив строк
             tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
-            DateOfBirth: new Date(),
+            dateOfBirth: new Date(),
             // ----
             similarProfessions: [],
             otherProfessions: [],
@@ -328,11 +332,11 @@ export const internshipsAndPracticesList: IInternshipsAndPractices[] = [
           knowledge: [""], // можно вставить редактор описние или массив строк
           tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
           createdAt: new Date(),
-          DateOfBirth: new Date(),
-          contacts: [{ name: "Vladimir", contact: "Zenovsky" }],
+          dateOfBirth: new Date(),
+          contacts: [{ id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" }],
           city: "city enterprise",
           site: "site enterprise",
-          sizeCompany: [10],
+
           specialization: "specialization enterprise",
           staff: [
             {
@@ -342,7 +346,7 @@ export const internshipsAndPracticesList: IInternshipsAndPractices[] = [
               surname: "Абрамович",
               middleName: "Юрьевич",
               position: "Основатель СЕВЕРМАШ",
-              contact: { name: "Иван Юрьевич", contact: "7-777-777-777" },
+              contactStaff: { id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" },
             },
           ],
           advantagesOfTheEntity: [{ icon: "icon", text: "Льготы по здоровью" }],
@@ -372,7 +376,7 @@ export const internshipsAndPracticesList: IInternshipsAndPractices[] = [
           subcategories: [], // IProfession[]
           knowledge: [""], // можно вставить редактор описние или массив строк
           tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
-          DateOfBirth: new Date(),
+          dateOfBirth: new Date(),
           // ----
           similarProfessions: [],
           otherProfessions: [],
@@ -395,7 +399,7 @@ export const internshipsAndPracticesList: IInternshipsAndPractices[] = [
         knowledge: [""], // можно вставить редактор описние или массив строк
         tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
         createdAt: new Date(),
-        contacts: [{ name: "Vladimir", contact: "Zenovsky" }],
+        contacts: [{ id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" }],
         city: "Yaroslavl",
         sizeInternshipsOrPractice: [10],
         specialization: "specialization internshipsAndPractices",
@@ -407,7 +411,7 @@ export const internshipsAndPracticesList: IInternshipsAndPractices[] = [
             surname: "Абрамович",
             middleName: "Юрьевич",
             position: "Основатель СЕВЕРМАШ",
-            contact: { name: "Иван Юрьевич", contact: "7-777-777-777" },
+            contactStaff: { id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" },
           },
         ],
         advantagesOfTheEntity: [{ icon: "icon", text: "Льготы по здоровью" }],

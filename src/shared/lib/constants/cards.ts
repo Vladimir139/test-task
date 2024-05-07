@@ -24,7 +24,7 @@ export const cardsVacancy: IVacancy[] = [
     knowledge: ["Ботаника", "Механика", "Кинематика"], // можно вставить редактор описние или массив строк
     tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
     createdAt: new Date(),
-    contacts: [{ name: "Vladimir", contact: "Zenovsky" }],
+    contacts: [{ id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" }],
     city: "Yaroslavl",
     site: "www.site.ru",
     sizeCompany: [10],
@@ -37,7 +37,7 @@ export const cardsVacancy: IVacancy[] = [
         surname: "Абрамович",
         middleName: "Юрьевич",
         position: "Основатель СЕВЕРМАШ",
-        contact: { name: "Иван Юрьевич", contact: "7-777-777-777" },
+        contactStaff: { id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" },
       },
     ],
     advantagesOfTheEntity: [{ icon: "icon", text: "Льготы по здоровью" }],

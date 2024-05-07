@@ -4,14 +4,33 @@ import Link from "next/link";
 import React, { FC, forwardRef } from "react";
 
 import { convertedSalaryPeriod, formatNumber } from "@/shared/lib/helpers";
+import { EditIcon, SaveIcon } from "@/shared/lib/icons";
 import { AdditionalInformation, ShortBlockInfo, TagsList } from "@/shared/ui/atoms";
 
 import styles from "./styles.module.scss";
 import { CardProps } from "./types";
 
 export const Card: FC<CardProps> = forwardRef(
-  ({ icon, title, subTitle, salary, tags, link, dateRecord, additionalText, onClick }, ref) => (
+  (
+    {
+      icon,
+      title,
+      subTitle,
+      salary,
+      tags,
+      link,
+      dateRecord,
+      additionalText,
+      onClick,
+      isEditCard,
+      isSavedCard,
+    },
+    ref,
+  ) => (
     <div className={styles.card} onClick={onClick} ref={ref}>
+      <button className={styles.additionBtn} type="button" aria-label="save card">
+        {isEditCard ? <EditIcon /> : <SaveIcon isSaved={isSavedCard} />}
+      </button>
       <div className={styles.marginBottom15}>
         <ShortBlockInfo icon={icon} title={title} subTitle={subTitle} />
       </div>

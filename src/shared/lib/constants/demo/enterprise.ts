@@ -23,7 +23,7 @@ export const enterprisesList: IEnterprise[] = [
       subcategories: [], // IProfession[]
       knowledge: [""], // можно вставить редактор описние или массив строк
       tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
-      DateOfBirth: new Date(),
+      dateOfBirth: new Date(),
       // ----
       similarProfessions: [],
       otherProfessions: [],
@@ -44,11 +44,10 @@ export const enterprisesList: IEnterprise[] = [
     knowledge: [""], // можно вставить редактор описние или массив строк
     tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
     createdAt: new Date(),
-    DateOfBirth: new Date(),
-    contacts: [{ name: "Vladimir", contact: "Zenovsky" }],
+    dateOfBirth: new Date(),
+    contacts: [{ id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" }],
     city: "city enterprise",
     site: "site enterprise",
-    sizeCompany: [10],
     specialization: "specialization enterprise",
     staff: [
       {
@@ -58,7 +57,7 @@ export const enterprisesList: IEnterprise[] = [
         surname: "Абрамович",
         middleName: "Юрьевич",
         position: "Основатель СЕВЕРМАШ",
-        contact: { name: "Иван Юрьевич", contact: "7-777-777-777" },
+        contactStaff: { id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" },
       },
     ],
     advantagesOfTheEntity: [{ icon: "icon", text: "Льготы по здоровью" }],
@@ -87,7 +86,7 @@ export const enterprisesList: IEnterprise[] = [
           subcategories: [], // IProfession[]
           knowledge: [""], // можно вставить редактор описние или массив строк
           tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
-          DateOfBirth: new Date(),
+          dateOfBirth: new Date(),
           // ----
           similarProfessions: [],
           otherProfessions: [],
@@ -108,11 +107,10 @@ export const enterprisesList: IEnterprise[] = [
         knowledge: [""], // можно вставить редактор описние или массив строк
         tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
         createdAt: new Date(),
-        DateOfBirth: new Date(),
-        contacts: [{ name: "Vladimir", contact: "Zenovsky" }],
+        dateOfBirth: new Date(),
+        contacts: [{ id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" }],
         city: "city enterprise",
         site: "site enterprise",
-        sizeCompany: [10],
         specialization: "specialization enterprise",
         staff: [
           {
@@ -122,7 +120,7 @@ export const enterprisesList: IEnterprise[] = [
             surname: "Абрамович",
             middleName: "Юрьевич",
             position: "Основатель СЕВЕРМАШ",
-            contact: { name: "Иван Юрьевич", contact: "7-777-777-777" },
+            contactStaff: { id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" },
           },
         ],
         advantagesOfTheEntity: [{ icon: "icon", text: "Льготы по здоровью" }],
@@ -159,7 +157,7 @@ export const enterprisesList: IEnterprise[] = [
           subcategories: [], // IProfession[]
           knowledge: [""], // можно вставить редактор описние или массив строк
           tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
-          DateOfBirth: new Date(),
+          dateOfBirth: new Date(),
           // ----
           similarProfessions: [],
           otherProfessions: [],
@@ -180,11 +178,10 @@ export const enterprisesList: IEnterprise[] = [
         knowledge: [""], // можно вставить редактор описние или массив строк
         tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
         createdAt: new Date(),
-        DateOfBirth: new Date(),
-        contacts: [{ name: "Vladimir", contact: "Zenovsky" }],
+        dateOfBirth: new Date(),
+        contacts: [{ id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" }],
         city: "city enterprise",
         site: "site enterprise",
-        sizeCompany: [10],
         specialization: "specialization enterprise",
         staff: [
           {
@@ -194,7 +191,7 @@ export const enterprisesList: IEnterprise[] = [
             surname: "Абрамович",
             middleName: "Юрьевич",
             position: "Основатель СЕВЕРМАШ",
-            contact: { name: "Иван Юрьевич", contact: "7-777-777-777" },
+            contactStaff: { id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" },
           },
         ],
         advantagesOfTheEntity: [{ icon: "icon", text: "Льготы по здоровью" }],

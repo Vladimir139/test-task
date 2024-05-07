@@ -1,0 +1,45 @@
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.leftWrapper {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.userPhoto {
+  width: 150px;
+  height: 150px;
+
+  background-color: #D9D9D9;
+
+  border-radius: 999px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  gap: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.additionalText {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+
+  color: #B6BFC6;
+}

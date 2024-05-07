@@ -9,6 +9,8 @@
   border-radius: 10px;
 
   cursor: pointer;
+
+  position: relative;
 }
 
 .bottomWrapper {
@@ -61,4 +63,15 @@
 
 .marginBottom15 {
   margin-bottom: 15px;
+}
+
+.additionBtn {
+  position: absolute;
+
+  top: 15px;
+  right: 15px;
+
+  background-color: inherit;
+
+  cursor: pointer;
 }

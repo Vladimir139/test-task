@@ -31,11 +31,15 @@
   border-bottom: 1px solid #D9D9D9;
 }
 
-.foundedEntityList {
+.lite {
 
 }
 
-.foundEntity {
+.stretch {
+  width: 100%;
+}
+
+.liteItem {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -47,6 +51,6 @@
   transition: 0.2s ease-in-out;
 }
 
-.foundEntity:hover {
+.liteItem:hover {
   background-color: #F4F4F6;
 }

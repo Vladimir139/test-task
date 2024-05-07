@@ -1,0 +1,65 @@
+.responseCard {
+  display: flex;
+  flex-direction: column;
+
+  gap: 15px;
+
+  padding: 20px;
+
+  border: 1px solid #D9D9D9;
+  border-radius: 15px;
+}
+
+.topWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.userTopWrapperInfo {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.userPhoto {
+  width: 40px;
+  height: 40px;
+
+  background-color: #D9D9D9;
+
+  border-radius: 999px;
+}
+
+.userCity {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+
+  color: #B6BFC6;
+}
+
+.socialNetworksList {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.socialNetwork {
+
+}

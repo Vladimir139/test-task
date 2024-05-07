@@ -29,7 +29,7 @@ export const vacancyList: IVacancy[] = [
         subcategories: [], // IProfession[]
         knowledge: [""], // можно вставить редактор описние или массив строк
         tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
-        DateOfBirth: new Date(),
+        dateOfBirth: new Date(),
         // ----
         similarProfessions: [],
         otherProfessions: [],
@@ -50,11 +50,10 @@ export const vacancyList: IVacancy[] = [
       knowledge: [""], // можно вставить редактор описние или массив строк
       tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
       createdAt: new Date(),
-      DateOfBirth: new Date(),
-      contacts: [{ name: "Vladimir", contact: "Zenovsky" }],
+      dateOfBirth: new Date(),
+      contacts: [{ id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" }],
       city: "city enterprise",
       site: "site enterprise",
-      sizeCompany: [10],
       specialization: "specialization enterprise",
       staff: [
         {
@@ -64,7 +63,7 @@ export const vacancyList: IVacancy[] = [
           surname: "Абрамович",
           middleName: "Юрьевич",
           position: "Основатель СЕВЕРМАШ",
-          contact: { name: "Иван Юрьевич", contact: "7-777-777-777" },
+          contactStaff: { id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" },
         },
       ],
       advantagesOfTheEntity: [{ icon: "icon", text: "Льготы по здоровью" }],
@@ -94,7 +93,7 @@ export const vacancyList: IVacancy[] = [
       subcategories: [], // IProfession[]
       knowledge: [""], // можно вставить редактор описние или массив строк
       tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
-      DateOfBirth: new Date(),
+      dateOfBirth: new Date(),
       // ----
       similarProfessions: [],
       otherProfessions: [],
@@ -119,7 +118,7 @@ export const vacancyList: IVacancy[] = [
     knowledge: ["Ботаника", "Механика", "Кинематика"], // можно вставить редактор описние или массив строк
     tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
     createdAt: new Date(),
-    contacts: [{ name: "Vladimir", contact: "Zenovsky" }],
+    contacts: [{ id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" }],
     city: "Yaroslavl",
     site: "www.site.ru",
     sizeCompany: [10],
@@ -132,11 +131,13 @@ export const vacancyList: IVacancy[] = [
         surname: "Абрамович",
         middleName: "Юрьевич",
         position: "Основатель СЕВЕРМАШ",
-        contact: { name: "Иван Юрьевич", contact: "7-777-777-777" },
+        contactStaff: { id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" },
       },
     ],
     advantagesOfTheEntity: [{ icon: "icon", text: "Льготы по здоровью" }],
     phone: "7-777-777-77",
+    views: 1, // Добавлено поле views
+    responses: 0, // Добавлено поле responses
     // ----
     similarVacancy: [
       {
@@ -162,7 +163,7 @@ export const vacancyList: IVacancy[] = [
           subcategories: [], // IProfession[]
           knowledge: [""], // можно вставить редактор описние или массив строк
           tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
-          DateOfBirth: new Date(),
+          dateOfBirth: new Date(),
           // ----
           similarProfessions: [],
           otherProfessions: [],
@@ -187,7 +188,7 @@ export const vacancyList: IVacancy[] = [
         knowledge: ["Ботаника", "Механика", "Кинематика"], // можно вставить редактор описние или массив строк
         tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
         createdAt: new Date(),
-        contacts: [{ name: "Vladimir", contact: "Zenovsky" }],
+        contacts: [{ id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" }],
         city: "Yaroslavl",
         site: "www.site.ru",
         sizeCompany: [10],
@@ -200,22 +201,20 @@ export const vacancyList: IVacancy[] = [
             surname: "Абрамович",
             middleName: "Юрьевич",
             position: "Основатель СЕВЕРМАШ",
-            contact: { name: "Иван Юрьевич", contact: "7-777-777-777" },
+            contactStaff: { id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" },
           },
         ],
         advantagesOfTheEntity: [{ icon: "icon", text: "Льготы по здоровью" }],
         phone: "7-777-777-77",
-        // ----
-        similarVacancy: [],
-        otherVacancy: [],
-        educationalEstablishments: [],
-        enterprises: [],
-        internshipsAndInternships: [],
+        views: 0, // Добавлено поле views
+        responses: 0, // Добавлено поле responses
       },
     ],
     otherVacancy: [
       {
         id: 1,
+        views: 111,
+        responses: 123,
         name: "UX Writer",
         type: "vacancy",
         transliterationName: "ux_writer",
@@ -237,7 +236,7 @@ export const vacancyList: IVacancy[] = [
         knowledge: ["Ботаника", "Механика", "Кинематика"], // можно вставить редактор описние или массив строк
         tags: [{ name: "Fulltime" }, { name: "Hybrid" }, { name: "2-4 Years" }],
         createdAt: new Date(),
-        contacts: [{ name: "Vladimir", contact: "Zenovsky" }],
+        contacts: [{ id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" }],
         city: "Yaroslavl",
         site: "www.site.ru",
         sizeCompany: [10],
@@ -250,7 +249,7 @@ export const vacancyList: IVacancy[] = [
             surname: "Абрамович",
             middleName: "Юрьевич",
             position: "Основатель СЕВЕРМАШ",
-            contact: { name: "Иван Юрьевич", contact: "7-777-777-777" },
+            contactStaff: { id: 1, name: "Vladimir", contact: "7-777-777-777", type: "phone" },
           },
         ],
         advantagesOfTheEntity: [{ icon: "icon", text: "Льготы по здоровью" }],
