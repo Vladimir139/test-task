@@ -1,7 +1,8 @@
 import type { NextPage } from "next";
+import React from "react";
 
-import { HomePage } from "@/views";
+import { MainPage } from "@/pages";
 
-const Home: NextPage = () => <HomePage />;
+const Home: NextPage = () => <MainPage />;
 
 export default Home;
